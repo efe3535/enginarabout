@@ -1,0 +1,26 @@
+{
+  "name": "enginar",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "enginarabout": "enginarabout.js"
+  },
+  "scripts": {
+    "enginarabout": "node enginarabout.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efe3535/enginarabout.git"
+  },
+  "author": "efe3535",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/efe3535/enginarabout/issues"
+  },
+  "dependencies": {
+    "got": "^11.5.0",
+    "terminal-image": "^1.1.0"
+  },
+  "homepage": "https://github.com/efe3535/enginarabout#readme"
+}
