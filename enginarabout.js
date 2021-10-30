@@ -2,7 +2,7 @@
 const img = require( 'terminal-image' );
 const got = require( 'got' )
 got("https://avatars.githubusercontent.com/u/46342237?s=195", {responseType:'buffer'})
-.then(function (image) { return img.buffer(image.body, {width: '16%'}) })
+.then(function (image) { return img.buffer(image.body, {width: '33%'}) })
 .then(function (image) {
 	console.log("\u001b[33m\u001b[00m A wild \u001b[36mEfe\u001b[00m appeared!")
 	console.log(image);
