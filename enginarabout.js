@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const img = require('terminal-image');
 const got = require('got')
-const welcome = JSON.parse(require("fs").readFileSync("wellcome.json", { encoding: "utf8" }));
+const welcome = JSON.parse(require("fs").readFileSync("welcome.json", { encoding: "utf8" }));
 
 got("https://avatars.githubusercontent.com/u/46342237?s=195", { responseType: 'buffer' })
 	.then(function (image) { return img.buffer(image.body, { width: '33%' }) })
