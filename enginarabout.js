@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const img = require('terminal-image');
 const got = require('got')
-const texts = JSON.parse(require("fs").readFileSync("welcome.json", { encoding: "utf8" }));
 const texts = [
     "\u001b[33m\u001b[00m A wild \u001b[36mEfe\u001b[00m appeared!",
     "\u001b[33m\u001b[00m Welcome, \u001b[36mEfe\u001b[00m. We hope you brought pizza.",
