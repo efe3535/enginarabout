@@ -13,7 +13,7 @@ const texts = [
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just landed.",
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m is here.",
     "\u001b[33m\u001b[00m Wellcome \u001b[36mEfe\u001b[00m.",
-    "\u001b[33m\u001b[00m Everyone wellcome \u001b[36mEfe\u001b[00m",
+    "\u001b[33m\u001b[00m Everyone welcome \u001b[36mEfe\u001b[00m",
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m hopped into the your console.",
     "\u001b[33m\u001b[00m Wellcome \u001b[36mEfe\u001b[00m. Say hi!"
 ]
