@@ -12,10 +12,10 @@ const texts = [
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just slid into the your console.",
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just landed.",
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m is here.",
-    "\u001b[33m\u001b[00m Wellcome \u001b[36mEfe\u001b[00m.",
+    "\u001b[33m\u001b[00m Welcome \u001b[36mEfe\u001b[00m.",
     "\u001b[33m\u001b[00m Everyone welcome \u001b[36mEfe\u001b[00m",
     "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m hopped into the your console.",
-    "\u001b[33m\u001b[00m Wellcome \u001b[36mEfe\u001b[00m. Say hi!"
+    "\u001b[33m\u001b[00m Welcome \u001b[36mEfe\u001b[00m. Say hi!"
 ]
 
 got("https://avatars.githubusercontent.com/u/46342237?s=195", { responseType: 'buffer' })
