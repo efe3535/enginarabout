@@ -1,27 +1,28 @@
 #!/usr/bin/env node
 const img = require('terminal-image');
-const got = require('got')
+const got = require('got');
+const efe = "\u001b[36mEfe\u001b[00m"
 const texts = [
-    "\u001b[33m\u001b[00m A wild \u001b[36mEfe\u001b[00m appeared!",
-    "\u001b[33m\u001b[00m Welcome, \u001b[36mEfe\u001b[00m. We hope you brought pizza.",
-    "\u001b[33m\u001b[00m Good to see you, \u001b[36mEfe\u001b[00m.",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just showed up!",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m joined the party.",
-    "\u001b[33m\u001b[00m Glad you're here, \u001b[36mEfe\u001b[00m.",
-    "\u001b[33m\u001b[00m Yay you made it, \u001b[36mEfe\u001b[00m.",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just slid into the your console.",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m just landed.",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m is here.",
-    "\u001b[33m\u001b[00m Welcome \u001b[36mEfe\u001b[00m.",
-    "\u001b[33m\u001b[00m Everyone welcome \u001b[36mEfe\u001b[00m",
-    "\u001b[33m\u001b[00m \u001b[36mEfe\u001b[00m hopped into the your console.",
-    "\u001b[33m\u001b[00m Welcome \u001b[36mEfe\u001b[00m. Say hi!"
-]
+    `A wild ${efe} appeared!`,
+    `Welcome, ${efe}. We hope you brought pizza.`,
+    `Good to see you, ${efe}.`,
+    `${efe} just showed up!`,
+    `${efe} joined the party.`,
+    `Glad you're here, ${efe}.`,
+    `Yay you made it, ${efe}.`,
+    `${efe} just slid into the your console.`,
+    `${efe} just landed.`,
+    `${efe} is here.`,
+    `Welcome ${efe}.`,
+    `Everyone welcome ${efe}`,
+    `${efe} hopped into the your console.`,
+    `Welcome ${efe}. Say hi!`
+];
 
 got("https://avatars.githubusercontent.com/u/46342237?s=195", { responseType: 'buffer' })
-	.then(function (image) { return img.buffer(image.body, { width: '33%' }) })
-	.then(function (image) {
-		console.log(texts[Math.floor(Math.random() * texts.length)]);
-		console.log(image);
-		console.log("Hello, I'm  \u001b[32mEfe\u001b[00m.\nI love exploring something new, that is why I'm learning \u001b[31m programming\u001b[00m.\nI'm interested in \u001b[34mLinux\u001b[00m and \u001b[35mC\u001b[00m.")
-	});
+    .then(image => img.buffer(image.body, { width: 33 }))
+    .then(image => {
+        console.log("\u001b[33m\u001b[00m", texts[Math.floor(Math.random() * texts.length)]);
+        console.log(image);
+        console.log("Hello, I'm \u001b[32mEfe\u001b[00m.\nI love exploring something new, that is why I'm learning \u001b[31mprogramming\u001b[00m.\nI'm interested in \u001b[34mLinux\u001b[00m and \u001b[35mC\u001b[00m.");
+    });
